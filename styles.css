@@ -1,0 +1,81 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+}
+
+.container {
+    position: relative;
+}
+
+.donut {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #cec17a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.donut:hover {
+    width: 145px;
+    height: 145px;
+}
+
+.center {
+    background-color: #fff8f8;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.ok {
+    background-color: #ffb800;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.donut:hover .text {
+    opacity: 1;
+}
+
+.first {
+    transform: rotate(45deg) translate(50px) rotate(90deg);
+}
+
+.second {
+    transform: rotate(135deg) translate(50px) rotate(90deg);
+}
+
+.third {
+    transform: rotate(-135deg) translate(50px) rotate(90deg);
+}
+
+.fourth {
+    transform: rotate(-45deg) translate(50px) rotate(90deg);
+}
